@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el header */
+/* Flex container - Flex items */
+.header-container{
+    color: #fff;
+    background-color: #5995da;
+    padding: 20px 0px;
+
+    /* habilitamos Flex */
+    display: flex;
+    /* PODEMOS ALINEAR ELEMENTOS HORIZONTALMENTE */
+    justify-content: center;
+
+}
+
+.header{
+    border: 1px solid #fff;
+    width: 60%;
+    /* habilitamos Flex */
+    display: flex;
+    /* Alinear elementos distribuidos en el ancho del contenedor */
+    justify-content: space-around;
+}
+
+/* Estilos para la sección de productos */
+
+.section-container{
+    color: #5995da;
+    background-color: #d6e9fe;
+
+    display: flex;
+    justify-content: center;
+}
+
+.section{
+    width: 80%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+
+    /* Alineacion Vertical */
+    align-items: center;
+}
+
+
+/* Estilos para photo-grid-container */
+.photo-grid-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+.photo-grid{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap estar atento a que no desborde ningun elemento IMPORTANTE*/
+    flex-wrap: wrap;
+    /* flex-direction /column / row / reverse */
+    flex-direction: row;
+
+}
+
+img{
+    width: 100%;
+}
+
+/* order */
+.first-item{
+order: 1;
+}
+
+.last-item{
+order: -1;
+}
+
+
+
